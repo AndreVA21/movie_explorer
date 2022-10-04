@@ -5,4 +5,3 @@ __pycache__
 pytestdebug.log
 .coverage
 __init__.py
-output/request.csv
