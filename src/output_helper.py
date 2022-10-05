@@ -2,7 +2,7 @@ import csv
 import uuid
 from datetime import datetime
 
-OUTPUT_PATH = '/Users/miguelgemio/Jala/Python-Backend/Assignements/final_assig/movie_explorer/output/'
+OUTPUT_PATH = './output/'
 REQUEST_FILENAME = 'request.csv'
 
 

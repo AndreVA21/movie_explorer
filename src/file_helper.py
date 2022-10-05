@@ -1,7 +1,7 @@
 import json
 from csv import DictReader
 
-PATH_FILES = '/Users/miguelgemio/Jala/Python-Backend/Assignements/final_assig/movie_explorer/data/'
+PATH_FILES = './data/'
 
 
 def read_data(file_name, extension='csv'):
