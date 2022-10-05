@@ -1,7 +1,8 @@
 from src.output_helper import write_on_csv_request
 
-OUTPUT_PATH = '/Users/miguelgemio/Jala/Python-Backend/Assignements/final_assig/movie_explorer/output/'
+OUTPUT_PATH = './output/'
 REQUEST_FILENAME = 'request.csv'
+
 
 def test_write_csv_request_output_returns_ok():
     # Arrange
@@ -21,7 +22,7 @@ def test_write_csv_request_output_returns_ok():
 
 
 def test_write_csv_request_not_write_empty_data_returns_error():
-     # Arrange
+    # Arrange
     data = ''
     expected_output = {'statusCode': 'error', 'body': None}
 
