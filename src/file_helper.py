@@ -7,7 +7,7 @@ PATH_FILES = './data/'
 def read_data(file_name, extension='csv'):
     path, data = (PATH_FILES + file_name + '.' + extension), []  # We get the path of the file.
     try:
-        with open(path, 'r') as file:
+        with open(path, 'r', encoding='UTF-8') as file:
             if extension.lower() == 'csv':
                 data = list(DictReader(file))   # Convert csv data to a list of Dictionaries
             elif extension.lower() == 'json':
@@ -16,3 +16,8 @@ def read_data(file_name, extension='csv'):
         print(f'File not Found in path: {path}.\n', e)
     finally:
         return data  # Returns a List of Dictionaries
+
+
+# example to use:
+if __name__ == '__main__':
+    print(read_data('movies','csv'))
