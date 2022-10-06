@@ -1,4 +1,4 @@
-from components.dict_handler import get_dictionary
+from src.components.dict_handler import *
 
 def filter_by_all_title_decen_acend(order, order_by) -> dict:
 
