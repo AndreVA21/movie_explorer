@@ -19,7 +19,7 @@ def create_new_parser():
                         choices=['all'], default=None, required=False)
     parser.add_argument('-tg', '--tag', type=str, help='Tags  of the movies. (Tom Cruise)',
                         choices=['all'], default=None, required=False)
-    parser.add_argument('-r', '--rating', type=float, help='Rating of the movies. (3.0)',
+    parser.add_argument('-r', '--rating', type=str, help='Rating of the movies. (3.0)',
                         default=None, required=False)
     parser.add_argument('-u', '--user', type=int, help="User's id. (1234)",
                         default=None, required=False)

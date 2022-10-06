@@ -9,3 +9,8 @@ c7afa36b9274458c8422a04711648996,movies_explorer.py -t avengers -o asc -b title,
 9ff2114ceb21476ab6916948f502e010,movies_explorer.py -t all -o desc -b title,2022-10-06 12:44:17
 731dacc3f11d46c18ca0e5dde64127db,movies_explorer.py -t all -o desc -b release_date,2022-10-06 12:49:11
 5b0e3f5350944cebbce4e83b7ed44c04,movies_explorer.py -t all -o asc -b release_date,2022-10-06 12:49:23
+d73bb9000abf4a96be29a4a165629505,movies_explorer.py -r all --user 609,2022-10-06 12:58:58
+9ae0a62520ec49d69bc5e6a53c1a5605,movies_explorer.py -r all --user 5,2022-10-06 12:59:03
+f7fe8f55b7cc432ea7f679716c873224,movies_explorer.py -r al --user 5,2022-10-06 12:59:07
+eef3a5ee42b145c99ca264f8cd3716d0,movies_explorer.py -r all --user 1000,2022-10-06 12:59:15
+016fee3133244780b252544f24bddccd,movies_explorer.py -t C -g Horror,2022-10-06 12:59:47
