@@ -15,6 +15,8 @@ def set_data_title_release_date_genres(rows) -> dict:
     return {'title':normalized(delate_string(helper_find(rows['title']), rows['title'])[:-1]),
     'release_date':filter_handler(helper_find(rows['title'])),
     'genres':genres_handler(rows['genres'])}
+
+###filters###
     
 def filter_by_all_title_decen_acend(order, order_by) -> dict:
 
