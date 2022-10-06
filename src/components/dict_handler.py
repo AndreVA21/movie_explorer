@@ -1,5 +1,5 @@
 from src.components.filters_string import *
-from file_helper import read_data
+from src.file_helper import read_data
 
 def get_dictionary() -> dict:
     
@@ -15,6 +15,7 @@ def set_data_title_release_date_genres(rows) -> dict:
     return {'title':normalized(delate_string(helper_find(rows['title']), rows['title'])[:-1]),
     'release_date':filter_handler(helper_find(rows['title'])),
     'genres':genres_handler(rows['genres'])}
+
 
 ###filters###
     
