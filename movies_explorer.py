@@ -5,7 +5,7 @@ from src.parser_helper import create_new_parser, is_feature_2, is_feature_3, is_
     is_feature_5, is_feature_6, is_feature_7, is_feature_8
 from src.output_helper import save_output_in_json_csv_file
 from src.feature_3 import feature_3
-from src.filter_handler import filter_by_all_title_decen_acend
+from src.feacture02 import filter_by_all_title_decen_acend
 
 # Read the Argument Since the console
 req, str_args = create_new_parser()    # We get the arguments in a dict and str.
@@ -23,7 +23,7 @@ req, str_args = create_new_parser()    # We get the arguments in a dict and str.
 if req:
     output = []
     if is_feature_2(req):
-        output = filter_by_all_title_decen_acend(True)
+        output = filter_by_all_title_decen_acend(req.get('order'),req.get('order_by'))
         # For feature 2 do here[{sa},{wqer}].
         print('feature 2')
         # output = feature2(req) 
