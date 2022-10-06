@@ -1,18 +1,9 @@
 from numpy import delete
 from src.file_helper import read_data
 from datetime import datetime
-from src.components.filters_string import helper_find, delate_string
+from src.components.filters_string import helper_find, delate_string,\
+                                            convert_epoch_to_datetime_string
 
-
-def convert_epoch_to_datetime_string(timestamp):
-    date_time = datetime.fromtimestamp(float(timestamp))
-    day = date_time.strftime('%A')
-    month = date_time.strftime('%B')
-    time = str(date_time.strftime('%I:%M:%S %p'))
-    time = time[1:] if time.startswith('0') else time
-    new_date = day + ', ' + month + ' ' + str(date_time.month) \
-        + ', ' + str(date_time.year) + ' ' + time
-    return new_date
 
 
 def get_output_format(output=[]):
@@ -37,17 +28,18 @@ def feature_8(request = {}):
     if request.get('rating') == 'all':
         ratings_data = read_data('ratings', 'csv')
         movies_data = read_data('movies', 'csv')
-
+        # Get the a list if ratings data with the request.user id
         for element in ratings_data:
             if element.get('userId') == str(request.get('user')):
                 output.append(element)
+        # Get a list of moviesIds required in raitings.
         movies_ids = [element.get('movieId') for element in output]
         filter_movies_data = []
-        
+        # Filter the all movies data and get only the movies that appear in the output.
         for element in movies_data:
             if element.get('movieId') in movies_ids:
                 filter_movies_data.append(element)
-
+        # Mix the information required to create a json(dict) object by element.
         for element in output:
             for movie in filter_movies_data:
                 if element.get('movieId') == movie.get('movieId'):
