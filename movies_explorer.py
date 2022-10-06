@@ -22,7 +22,7 @@ req, str_args = create_new_parser()    # We get the arguments in a dict and str.
 if req:
     output = []
     if is_feature_2(req):
-        output = filter_by_all_title_decen_acend(True)
+        output = filter_by_all_title_decen_acend(req.get('order'),req.get('order_by'))
         # For feature 2 do here[{sa},{wqer}].
         print('feature 2')
         # output = feature2(req) 
