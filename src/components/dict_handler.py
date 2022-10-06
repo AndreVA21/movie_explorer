@@ -1,4 +1,4 @@
-from src.components.filters_string import *
+from components.filters_string import *
 from file_helper import read_data
 
 def get_dictionary() -> dict:
