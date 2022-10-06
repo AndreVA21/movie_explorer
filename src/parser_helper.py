@@ -10,7 +10,7 @@ def create_new_parser():
                         default=None, required=False,
                         choices=['asc', 'desc', 'ascendent', 'descendent'])
     parser.add_argument('-b', '--by', type=str, help='property on which it is sorted.',
-                        choices=['title', 'release date', 'count'],
+                        choices=['title', 'release_date', 'count'],
                         default=None, required=False)
     parser.add_argument('-g', '--genre', type=str, help='Genre of the movies. (Animation)',
                         default=None, required=False)
@@ -19,7 +19,7 @@ def create_new_parser():
                         choices=['all'], default=None, required=False)
     parser.add_argument('-tg', '--tag', type=str, help='Tags  of the movies. (Tom Cruise)',
                         choices=['all'], default=None, required=False)
-    parser.add_argument('-r', '--rating', type=float, help='Rating of the movies. (3.0)',
+    parser.add_argument('-r', '--rating', type=str, help='Rating of the movies. (3.0)',
                         default=None, required=False)
     parser.add_argument('-u', '--user', type=int, help="User's id. (1234)",
                         default=None, required=False)

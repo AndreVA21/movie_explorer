@@ -6,6 +6,7 @@ from src.parser_helper import create_new_parser, is_feature_2, is_feature_3, is_
 from src.output_helper import save_output_in_json_csv_file
 from src.feature_3 import feature_3
 from src.feacture02 import filter_by_all_title_decen_acend
+from src.feature_8 import feature_8
 
 # Read the Argument Since the console
 req, str_args = create_new_parser()    # We get the arguments in a dict and str.
@@ -34,29 +35,28 @@ if req:
         # output = feature2(req) output wait for a list of dicts [{..},{..}].
         
     elif is_feature_4(req):
-        # For feature 3 do here.
+        # For feature 4 do here.
         print('feature 4')
         # output = feature2(req) output wait for a list of dicts [{..},{..}].
 
     elif is_feature_5(req):
-        # For feature 3 do here.
+        # For feature 5 do here.
         print('feature 5')
         # output = feature5(req) output wait for a list of dicts [{..},{..}].
 
     elif is_feature_6(req):
-        # For feature 3 do here.
+        # For feature 6 do here.
         print('feature 6')
         # output = feature6(req) output wait for a list of dicts [{..},{..}].
 
     elif is_feature_7(req):
-        # For feature 3 do here.
+        # For feature 7 do here.
         print('feature 7')
         # output = feature7(req) output wait for a list of dicts [{..},{..}].
 
     elif is_feature_8(req):
-        # For feature 3 do here.
-        print('feature 8')
-        # output = feature8(req) output wait for a list of dicts [{..},{..}].
+        # For feature 8 do here.
+        output = feature_8(req)
 
     else:
         print('The arguments are not te corrects',

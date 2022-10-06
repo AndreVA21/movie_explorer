@@ -5,3 +5,19 @@ c7afa36b9274458c8422a04711648996,movies_explorer.py -t avengers -o asc -b title,
 4364a547397048e7b6dd152e47feaf07,Test request.csv - ok,2022-10-06 08:49:41
 2785d38d967b498a88d4c76d849f9071,Test request.csv - ok,2022-10-06 09:06:27
 22a0bc98e92a46758e89a61f0035b0ee,Test request.csv - ok,2022-10-06 10:53:44
+3dd7c6a0e9ac46b5af00eb9254dc474d,movies_explorer.py -t all -o asc -b title,2022-10-06 12:44:06
+9ff2114ceb21476ab6916948f502e010,movies_explorer.py -t all -o desc -b title,2022-10-06 12:44:17
+731dacc3f11d46c18ca0e5dde64127db,movies_explorer.py -t all -o desc -b release_date,2022-10-06 12:49:11
+5b0e3f5350944cebbce4e83b7ed44c04,movies_explorer.py -t all -o asc -b release_date,2022-10-06 12:49:23
+d73bb9000abf4a96be29a4a165629505,movies_explorer.py -r all --user 609,2022-10-06 12:58:58
+9ae0a62520ec49d69bc5e6a53c1a5605,movies_explorer.py -r all --user 5,2022-10-06 12:59:03
+f7fe8f55b7cc432ea7f679716c873224,movies_explorer.py -r al --user 5,2022-10-06 12:59:07
+eef3a5ee42b145c99ca264f8cd3716d0,movies_explorer.py -r all --user 1000,2022-10-06 12:59:15
+016fee3133244780b252544f24bddccd,movies_explorer.py -t C -g Horror,2022-10-06 12:59:47
+d35efc6be181487c90cb31f845a45d3e,Test request.csv - ok,2022-10-06 13:01:19
+426e6cfd4feb4c94a5ea8d9effc3a110,Test request.csv - ok,2022-10-06 13:01:51
+5911e62f089144bb85600e8c9589e7c8,Test request.csv - ok,2022-10-06 13:08:24
+c172bb28ea7c4754924a04da17801446,movies_explorer.py -t C -g Horror,2022-10-06 13:08:34
+c8753122f95141f2a460cfc04663fe5c,movies_explorer.py -r all --user 1000,2022-10-06 13:08:40
+7f56cc99c5a94d589615c39f4f937b2a,movies_explorer.py -r all --user 5,2022-10-06 13:08:44
+95de4ae909bd4e499ba7c294caf6fc8e,movies_explorer.py -r all --user 609,2022-10-06 13:08:55

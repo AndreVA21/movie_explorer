@@ -1,5 +1,5 @@
 from src.components.filters_string import *
-from file_helper import read_data
+from src.file_helper import read_data
 
 def get_dictionary() -> dict:
     
