@@ -10,7 +10,7 @@ def create_new_parser():
                         default=None, required=False,
                         choices=['asc', 'desc', 'ascendent', 'descendent'])
     parser.add_argument('-b', '--by', type=str, help='property on which it is sorted.',
-                        choices=['title', 'release date', 'count'],
+                        choices=['title', 'release_date', 'count'],
                         default=None, required=False)
     parser.add_argument('-g', '--genre', type=str, help='Genre of the movies. (Animation)',
                         default=None, required=False)

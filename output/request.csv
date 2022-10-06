@@ -5,3 +5,7 @@ c7afa36b9274458c8422a04711648996,movies_explorer.py -t avengers -o asc -b title,
 4364a547397048e7b6dd152e47feaf07,Test request.csv - ok,2022-10-06 08:49:41
 2785d38d967b498a88d4c76d849f9071,Test request.csv - ok,2022-10-06 09:06:27
 22a0bc98e92a46758e89a61f0035b0ee,Test request.csv - ok,2022-10-06 10:53:44
+3dd7c6a0e9ac46b5af00eb9254dc474d,movies_explorer.py -t all -o asc -b title,2022-10-06 12:44:06
+9ff2114ceb21476ab6916948f502e010,movies_explorer.py -t all -o desc -b title,2022-10-06 12:44:17
+731dacc3f11d46c18ca0e5dde64127db,movies_explorer.py -t all -o desc -b release_date,2022-10-06 12:49:11
+5b0e3f5350944cebbce4e83b7ed44c04,movies_explorer.py -t all -o asc -b release_date,2022-10-06 12:49:23
