@@ -4,7 +4,8 @@ import json
 from src.parser_helper import create_new_parser, is_feature_2, is_feature_3, is_feature_4, \
     is_feature_5, is_feature_6, is_feature_7, is_feature_8
 from src.output_helper import save_output_in_json_csv_file
-from components.dict_handler import filter_by_all_title_decen_acend
+from src.feature_3 import feature_3
+from src.feacture02 import filter_by_all_title_decen_acend
 
 # Read the Argument Since the console
 req, str_args = create_new_parser()    # We get the arguments in a dict and str.
@@ -29,7 +30,7 @@ if req:
         
     elif is_feature_3(req):
         # For feature 3 do here.
-        print('feature 3')
+        output = feature_3(req.get('title'), req.get('genre'))
         # output = feature2(req) output wait for a list of dicts [{..},{..}].
         
     elif is_feature_4(req):
