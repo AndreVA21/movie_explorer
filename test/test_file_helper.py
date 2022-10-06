@@ -17,4 +17,3 @@ def test_read_data_not_exist_filename_returns_empty_list():
     assert data is not None, 'expected non null list'
     assert type(data) is list, 'expected a list'
     assert len(data) == 0, 'expected empty list'
-
