@@ -6,3 +6,12 @@ c7afa36b9274458c8422a04711648996,movies_explorer.py -t avengers -o asc -b title,
 
 2785d38d967b498a88d4c76d849f9071,Test request.csv - ok,2022-10-06 09:06:27
 
+7a2f532f6278470cb061bc7a4c0c1b25,movies_explorer.py --title B --genre Sci-Fi,2022-10-06 15:12:32
+5ac7d72eb06546699886aba6146ecfc1,movies_explorer.py --title B --genre Sci-Fi,2022-10-06 15:12:40
+dc497229f3dd42098e4aebd820b4116d,movies_explorer.py --title Sabrina --release_date all,2022-10-06 15:13:15
+530fea5af65a464cb1e82fe08b75ca99,Test request.csv - ok,2022-10-06 15:13:55
+afa67ba84a7b475eae7f80e73bd0249f,Test request.csv - ok,2022-10-06 15:27:04
+ddc4044d5576437e9d2f5d2bcf8b4246,movies_explorer.py --title Sabrinaasas --release_date all,2022-10-06 15:30:11
+e8a52876356c4c93a2d3425887de4581,Test request.csv - ok,2022-10-06 15:32:17
+5195a158ab3d4a3eb195fb1e69a3331f,movies_explorer.py --title X --genre Sci-Fi,2022-10-06 16:42:08
+218ee9923b8f40dbb8ce8b88289733df,Test request.csv - ok,2022-10-06 16:44:28
