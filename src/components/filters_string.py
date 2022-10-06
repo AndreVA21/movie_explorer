@@ -47,3 +47,7 @@ def convert_epoch_to_datetime_string(timestamp):
     new_date = day + ', ' + month + ' ' + str(date_time.month) \
         + ', ' + str(date_time.year) + ' ' + time
     return new_date
+
+
+def get_genre(genre, genres):
+    return [g for g in genres if g == genre]

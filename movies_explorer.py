@@ -5,6 +5,7 @@ from src.parser_helper import create_new_parser, is_feature_2, is_feature_3, is_
     is_feature_5, is_feature_6, is_feature_7, is_feature_8
 from src.output_helper import save_output_in_json_csv_file
 from src.feature_3 import feature_3
+from src.feature_4 import feature_4
 from src.feacture02 import filter_by_all_title_decen_acend
 from src.feature07 import feature7
 from src.feature_8 import feature_8
@@ -37,7 +38,7 @@ if req:
         
     elif is_feature_4(req):
         # For feature 4 do here.
-        print('feature 4')
+        output = feature_4(req.get('title'))
         # output = feature2(req) output wait for a list of dicts [{..},{..}].
 
     elif is_feature_5(req):
