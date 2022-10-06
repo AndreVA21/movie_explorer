@@ -1,6 +1,4 @@
-from numpy import delete
 from src.file_helper import read_data
-from datetime import datetime
 from src.components.filters_string import helper_find, delate_string,\
                                             convert_epoch_to_datetime_string
 

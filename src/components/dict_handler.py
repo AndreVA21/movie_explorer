@@ -16,6 +16,7 @@ def set_data_title_release_date_genres(rows) -> dict:
     'release_date':filter_handler(helper_find(rows['title'])),
     'genres':genres_handler(rows['genres'])}
 
+
 ###filters###
     
 if __name__ == '__main__':
