@@ -9,6 +9,7 @@ from src.feature_4 import feature_4
 from src.feacture02 import filter_by_all_title_decen_acend
 from src.feature07 import feature7
 from src.feature_8 import feature_8
+from src.feacture_6 import feacture_6
 
 # Read the Argument Since the console
 req, str_args = create_new_parser()    # We get the arguments in a dict and str.
@@ -47,7 +48,7 @@ if req:
         # output = feature5(req) output wait for a list of dicts [{..},{..}].
 
     elif is_feature_6(req):
-        # For feature 6 do here.
+        output = feacture_6(req.get('rating'))
         print('feature 6')
         # output = feature6(req) output wait for a list of dicts [{..},{..}].
 
