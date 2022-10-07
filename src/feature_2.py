@@ -1,6 +1,6 @@
 from src.components.dict_handler import *
 
-def feacture_2(order, order_by) -> dict:
+def feature_2(order, order_by) -> dict:
 
     data_json = get_dictionary()
     reve = False if order=='asc' or order == 'ascendent' else True
@@ -9,4 +9,4 @@ def feacture_2(order, order_by) -> dict:
     return sorted_dict
 
 if __name__ == '__main__':
-    print(feacture_2('asc','release_date'))
+    print(feature_2('asc','release_date'))

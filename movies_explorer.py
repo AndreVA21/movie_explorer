@@ -6,10 +6,12 @@ from src.parser_helper import create_new_parser, is_feature_2, is_feature_3, is_
 from src.output_helper import save_output_in_json_csv_file
 from src.feature_3 import feature_3
 from src.feature_4 import feature_4
-from src.feature_2 import filter_by_all_title_decen_acend
+from src.feature_2 import feature_2
+from src.feature05 import feature5
 from src.feature07 import feature7
 from src.feature_8 import feature_8
-from src.feature_6 import feacture_6
+from src.feature_6 import feature_6
+
 
 # Read the Argument Since the console
 req, str_args = create_new_parser()    # We get the arguments in a dict and str.
@@ -27,7 +29,7 @@ req, str_args = create_new_parser()    # We get the arguments in a dict and str.
 if req:
     output = []
     if is_feature_2(req):
-        output = filter_by_all_title_decen_acend(req.get('order'),req.get('order_by'))
+        output = feature_2(req.get('order'),req.get('order_by'))
         # For feature 2 do here[{sa},{wqer}].
         print('feature 2')
         # output = feature2(req) 
@@ -44,11 +46,11 @@ if req:
 
     elif is_feature_5(req):
         # For feature 5 do here.
-        print('feature 5')
+        output = feature5(req.get('title'),req.get('tag'))
         # output = feature5(req) output wait for a list of dicts [{..},{..}].
 
     elif is_feature_6(req):
-        output = feacture_6(req.get('rating'))
+        output = feature_6(req.get('rating'))
         print('feature 6')
         # output = feature6(req) output wait for a list of dicts [{..},{..}].
 

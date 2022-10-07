@@ -1,18 +1,16 @@
-from src.feature_6 import feacture_6
+from src.feature_6 import feature_6
 
-"""
 
-def test_release_date_feacture_2():
-    rating = '3.0'
-    data = feacture_6(rating)
+def test_release_date_feature_2():
+    rating = '1.0'
+    data = feature_6(rating)
 
-    assert len(data), 15
+    assert len(data) == 2811
 
-def test_release_date_feacture_2():
-    rating = '2.0'
-    data = feacture_6(rating)
+def test_release_date_feature_2():
+    rating = '0.5'
+    data = feature_6(rating)
 
-    assert len(data), 30
-    
+    assert len(data) ==  1370
 
-"""
+

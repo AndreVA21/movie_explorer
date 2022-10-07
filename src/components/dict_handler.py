@@ -1,5 +1,8 @@
 from src.components.filters_string import *
 from src.file_helper import read_data
+from datetime import datetime
+
+FORMAT = "%A, %B %d, %Y %H:%M:%S %p"
 
 def get_dictionary() -> dict:
     
@@ -13,13 +16,20 @@ def get_dictionary() -> dict:
 
 def get_dictionary_6(value):
     data = []
+
+    filter_rating = []
     csvReader= read_data('movies')
     csvraiting = read_data('ratings')
 
+    for rows in csvraiting:
+
+        if rows['rating'] == value:
+            filter_rating.append(rows)
+
     for rows in csvReader:
-        for raiting_rows in csvraiting:
-            if rows['movieId'] == raiting_rows['movieId'] and raiting_rows['rating'] == value:
-                data.append(set_movie_data(rows, raiting_rows))
+        for rating in filter_rating:
+            if rows['movieId'] == rating['movieId']:
+                data.append(set_movie_data(rows, rating))
 
     return data
     
@@ -29,6 +39,11 @@ def set_data_title_release_date_genres(rows) -> dict:
     'genres':genres_handler(rows['genres'])}
 
 
+def result_tag_format(tag):
+    result = {}
+    result['tag'] = tag['tag']
+    result['date_time'] = convert_epoch_to_datetime_string(tag['timestamp'])
+    return result
 
 def set_movie_data(rows, rows_rating) -> dict:
     return {
@@ -39,7 +54,7 @@ def set_movie_data(rows, rows_rating) -> dict:
                 )[:-1]),
         'release_date':filter_handler(helper_find(rows['title'])),
         'genres':genres_handler(rows['genres']),
-        'timestamp':rows_rating['timestamp'],
+        'timestamp':datetime.fromtimestamp(int(rows_rating['timestamp']), FORMAT),
         'rating':float(rows_rating['rating'])
     }
 ###filters###
