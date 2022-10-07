@@ -1,15 +1,16 @@
 ##### Final Assignment
-#Movie Explorer
+# Movie Explorer
 
-##General description
+## General description
 
 This is a project that consists of exploring a set of movies and filtering them by certain sets of commands that will be explained later.
 
-##Recommendation
+## Recommendation
 - All initial configurations will be done via command line
 - Recommended Python version 3.9
+- Pycodestyle and Pytest are required.
 
-##Application Description
+## Application Description
 - The application consists of a collection of utilities
 - The user sends an initial configuration the application receives some initial - configuration, translates the initial information and returns a result
 - The files this utility will be reading data from are:
@@ -33,7 +34,7 @@ This is a project that consists of exploring a set of movies and filtering them 
  - where 0871f013c7f945e8a9d965775556e559 is a unique identifier for this request
  
  
- ##Arguments
+ ## Arguments
  
    * \-\-help , \-h : Show this help message and exit
    * \-\-title **all** ,  \-t **all** : Command to filter all movies
@@ -46,15 +47,15 @@ This is a project that consists of exploring a set of movies and filtering them 
    * \-\-rating  **RATING ** ,  \-r **RATING **  : Rating of the movies
    * \-\-user **USER** ,  \-u **USER**  :  User's id.
 
-##Functionality
-### Help
+## Functionality
+### Feature 1 - Help
 This command helps the user to visualize the parameters to be able to use the utilities
 
 *Command*
 ```
 python movies_explorer.py --help
 ```   
-###List all movies sorted by title or release_date in ascending or descending order
+### Feature 2 - List all movies sorted by title or release_date in ascending or descending order
 This command generates a list of all movies ordered by title or realease_date in ascending or descending order.
 
 *Request example*
@@ -82,7 +83,7 @@ python movies_explorer --title all --order desc --by title
 
 ```
 
-###List all the movies that the title begins with a specified Letter and that has a specific genre
+### Feature 3 - List all the movies that the title begins with a specified Letter and that has a specific genre
 This command generates a list of all the movies that start with a specific letter and have a specific genre
 Accept only one gender
 
@@ -115,7 +116,7 @@ python3 movies_explorer --title T* --genre Animation
 	"size": 3
 }
 ```
-###List all release dates for movie title  "Sabrina"
+### Feature 4 - List all release dates for movie title  "Sabrina"
 *Request example*
 ```
 python3 movies_explorer --title Sabrina --release_date all
@@ -140,7 +141,7 @@ python3 movies_explorer --title Sabrina --release_date all
 }
 ```
 
-###List all tags for movie title  "Home Alone 2"
+### Feature 5 - List all tags for movie title  "Home Alone 2"
 *Request example*
 ```
 python3 movies_explorer --title "Home Alone 2" --tag all
@@ -165,7 +166,7 @@ python3 movies_explorer --title "Home Alone 2" --tag all
 	"size": 1
 }
 ```
-###List all movies with rating of 3.0
+### Feature 6 - List all movies with rating of 3.0
 *Request example*
 ```
 python3 movies_explorer --rating 3.0
@@ -199,7 +200,7 @@ python3 movies_explorer --rating 3.0
 	"size": 2
 }
 ```
-###Show all available genres (duplicate values are not allowed)
+### Feature 7 - Show all available genres (duplicate values are not allowed)
 *Request example*
 ```
 python3 movies_explorer –genres
@@ -212,7 +213,7 @@ python3 movies_explorer –genres
 	"size": 5
 }
 ```
-###Movies rated by user
+### Feature 8 - Movies rated by user
 *Request example*
 ```
 python3 movies_explorer --ratings all --user 1 
@@ -233,8 +234,8 @@ python3 movies_explorer --ratings all --user 1
 	],
 	"size": 1
 ```
-##Development team
-* ###Miguel Gemio Quispe
-* ###Nelson Delgado Colque
-* ###Andre Arroyo Hinojosa
-* ###Alejandra Maldonado
+## Development team
+* ### Miguel Gemio Quispe
+* ### Nelson Delgado Colque
+* ### Andre Arroyo Hinojosa
+* ### Alejandra Maldonado

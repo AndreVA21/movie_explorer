@@ -4,10 +4,10 @@ from datetime import datetime
 
 
 def filter_handler(sltring_list) -> int:
-    year=[]
+    year = []
     for element in sltring_list:
-        year=[abs(int(s)) for s in re.findall(r'-?\d+\.?\d*', element)]
-    return 0 if year==[] else year[0]
+        year = [abs(int(s)) for s in re.findall(r'-?\d+\.?\d*', element)]
+    return 0 if year == [] else year[0]
 
 
 def helper_find(String) -> list:
@@ -18,8 +18,8 @@ def genres_handler(string) -> list:
     return string.split('|')
 
 
-def delate_string(list_remove,string):
-    if list_remove ==[]:
+def delate_string(list_remove, string):
+    if list_remove == []:
         return 'None'
     else:
         str_list = string.split('('+list_remove[-1]+')')
@@ -65,7 +65,7 @@ def get_output_format(output=[]):
         data['release_date'] = dummy_title[-1]
         data['genres'] = genres
         data['ratings'] = [{
-            'date_time': str_date, 
+            'date_time': str_date,
             'rating': element.get('rating')
         }]
         new_output.append(data)

@@ -3,17 +3,18 @@ from src.components.dict_handler import set_data_title_release_date_genres, resu
 from src.components.filters_string import *
 
 
-def feature_5(title,tag):
+def feature_5(title, tag):
 
     data = []
     if tag == "all":
-        movies = read_data('movies','csv')
-        tags = read_data('tags','csv')
+        movies = read_data('movies', 'csv')
+        tags = read_data('tags', 'csv')
 
         for movie in movies:
             result = set_data_title_release_date_genres(movie)
-            if title == result['title']:  
-                result['tags'] = [result_tag_format(tag) for tag in tags if movie['movieId'] == tag['movieId']]
+            if title == result['title']:
+                result['tags'] = [
+                    result_tag_format(tag) for tag in tags if movie['movieId'] == tag['movieId']
+                ]
                 data.append(result)
     return data
-

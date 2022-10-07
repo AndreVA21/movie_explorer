@@ -79,3 +79,14 @@ cade6e073c3f49c295a8bb4abb5c14c3,Test request.csv - ok,2022-10-07 12:16:42
 dd44c162283847de8e495c69f7f11036,Test request.csv - ok,2022-10-07 12:16:58
 58d41b3a170f4d9aa48c864b0cdbba1e,Test request.csv - ok,2022-10-07 12:23:13
 db40167d09c94fd08c6bb9d6b6d523ae,Test request.csv - ok,2022-10-07 12:26:09
+3b6d6d5f46af49c99e6c6c1fbaedf577,Test request.csv - ok,2022-10-07 12:30:12
+65d41e3c05bb4101ace0c010646cd410,movies_explorer.py --title all --order desc --by title,2022-10-07 12:30:16
+a4b065b78b9c4cc988e3faf88039d6f5,movies_explorer.py --title all --order desc --by title,2022-10-07 12:31:37
+3aa7adc840bd40e0aa7bd2ca22852722,movies_explorer.py --title T --genre (no genres listed),2022-10-07 12:31:43
+5f68f60ec5324324a0060191fdb8d2cc,movies_explorer.py --title Sabrina --release_date all,2022-10-07 12:31:49
+c9a4e879bd134dc9941890fb650d8e7d,movies_explorer.py --title Step Brothers --tag all,2022-10-07 12:31:59
+1745675a3a4542c787cefac19b06cf0b,movies_explorer.py --rating 0.5,2022-10-07 12:32:07
+01f406111b6f4bbeb5fbffef34cc37a2,movies_explorer.py --genre all,2022-10-07 12:32:13
+c120738bbb4642b9b33f1ff3862078c6,movies_explorer.py --rating all --user 5,2022-10-07 12:32:24
+b02c98a56fce463cb5d190da406bbd74,Test request.csv - ok,2022-10-07 12:32:39
+a74f9241aed64512942363ee664c3e0e,movies_explorer.py --rating all --user 5,2022-10-07 13:00:40

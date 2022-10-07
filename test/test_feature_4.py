@@ -16,6 +16,6 @@ def test_feature_4_example():
 
 
 def test_feature_4_empty_list():
-    title = 'Sabrina example'    
+    title = 'Sabrina example'
     data = feature_4(title)
     assert len(data) == 0, 'expected empty list'
