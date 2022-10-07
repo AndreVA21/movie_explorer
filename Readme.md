@@ -1,15 +1,16 @@
 ##### Final Assignment
-#Movie Explorer
+# Movie Explorer
 
-##General description
+## General description
 
 This is a project that consists of exploring a set of movies and filtering them by certain sets of commands that will be explained later.
 
-##Recommendation
+## Recommendation
 - All initial configurations will be done via command line
 - Recommended Python version 3.9
+- Pycodestyle and Pytest are required.
 
-##Application Description
+## Application Description
 - The application consists of a collection of utilities
 - The user sends an initial configuration the application receives some initial - configuration, translates the initial information and returns a result
 - The files this utility will be reading data from are:
@@ -33,7 +34,7 @@ This is a project that consists of exploring a set of movies and filtering them 
  - where 0871f013c7f945e8a9d965775556e559 is a unique identifier for this request
  
  
- ##Arguments
+ ## Arguments
  
    * \-\-help , \-h : Show this help message and exit
    * \-\-title **all** ,  \-t **all** : Command to filter all movies
@@ -46,15 +47,15 @@ This is a project that consists of exploring a set of movies and filtering them 
    * \-\-rating  **RATING ** ,  \-r **RATING **  : Rating of the movies
    * \-\-user **USER** ,  \-u **USER**  :  User's id.
 
-##Functionality
-### Help
+## Functionality
+### Feature 1 - Help
 This command helps the user to visualize the parameters to be able to use the utilities
 
 *Command*
 ```
 python movies_explorer.py --help
 ```   
-###List all movies sorted by title or release_date in ascending or descending order
+### Feature 2 - List all movies sorted by title or release_date in ascending or descending order
 This command generates a list of all movies ordered by title or realease_date in ascending or descending order.
 
 *Request example*
@@ -64,25 +65,25 @@ python movies_explorer --title all --order desc --by title
 *Response example*
 ```json
 {
-	"request_id": "0871f013c7f945e8a9d965775556e559",
-	"data": [
-		{
-			"title": "ABCDEFG",
-			"release_date": 1934,
-			"genres": ["acd", "xyz", "fgh"]
-		},
-		{
-			"title": "OPQRST",
-			"release_date": 1950,
-			"genres": ["acd"]
-		}
-	],
-	"size": 2
+    "request_id": "0871f013c7f945e8a9d965775556e559",
+    "data": [
+        {
+            "title": "ABCDEFG",
+            "release_date": 1934,
+            "genres": ["acd", "xyz", "fgh"]
+    },
+    {
+            "title": "OPQRST",
+            "release_date": 1950,
+            "genres": ["acd"]
+    }
+  ],
+    "size": 2
 }
 
 ```
 
-###List all the movies that the title begins with a specified Letter and that has a specific genre
+### Feature 3 - List all the movies that the title begins with a specified Letter and that has a specific genre
 This command generates a list of all the movies that start with a specific letter and have a specific genre
 Accept only one gender
 
@@ -94,28 +95,28 @@ python3 movies_explorer --title T* --genre Animation
 *Response example*
 ```json
 {
-	"request_id": "1171f013c7f945e8a9d965775556e559",
-	"data": [
-		{
-			"title": "Taaaaaa",
-			"release_date": 1934,
-			"genres": ["Animation"]
-		},
-		{
-			"title": "Tipy",
-			"release_date": 1970,
-			"genres": ["Animation"]
-		},
-		{
-			"title": "Ted",
-			"release_date": 1980,
-			"genres": ["Animation"]
-		}
-	],
-	"size": 3
+    "request_id": "1171f013c7f945e8a9d965775556e559",
+    "data": [
+        {
+            "title": "Taaaaaa",
+            "release_date": 1934,
+            "genres": ["Animation"]
+        },
+        {
+            "title": "Tipy",
+            "release_date": 1970,
+            "genres": ["Animation"]
+        },
+        {
+            "title": "Ted",
+            "release_date": 1980,
+            "genres": ["Animation"]
+        }
+    ],
+    "size": 3
 }
 ```
-###List all release dates for movie title  "Sabrina"
+### Feature 4 - List all release dates for movie title  "Sabrina"
 *Request example*
 ```
 python3 movies_explorer --title Sabrina --release_date all
@@ -123,24 +124,24 @@ python3 movies_explorer --title Sabrina --release_date all
 *Response example*
 ```json
 {
-	"request_id": "asss1f013c7f945e8a9d965775556e559",
-	"data": [
-		{
-			"title": "Sabrina",
-			"release_date": 1954,
-			"genres": ["Comedy", "Romance"]
-		},
-		{
-			"title": "Sabrina",
-			"release_date": 1995,
-			"genres": ["Comedy", "Romance"]
-		}
-	],
-	"size": 2
+    "request_id": "asss1f013c7f945e8a9d965775556e559",
+    "data": [
+        {
+            "title": "Sabrina",
+            "release_date": 1954,
+            "genres": ["Comedy", "Romance"]
+        },
+        {
+            "title": "Sabrina",
+            "release_date": 1995,
+            "genres": ["Comedy", "Romance"]
+        }
+    ],
+    "size": 2
 }
 ```
 
-###List all tags for movie title  "Home Alone 2"
+### Feature 5 - List all tags for movie title  "Home Alone 2"
 *Request example*
 ```
 python3 movies_explorer --title "Home Alone 2" --tag all
@@ -148,24 +149,24 @@ python3 movies_explorer --title "Home Alone 2" --tag all
 *Response example*
 ```json
 {
-	"request_id": "0871f013c7f945essss5775556e559",
-	"data": [
-		{
-			"title": "Home Alone 2",
-			"release_date": 1992,
-			"genres": ["Children", "Comedy"],
-			"tags": [
-				{"tag":"family", "date_time": "Monday, September 25, 2006 9:40:36 PM"}, 
-				{"tag":"funny", "date_time": "Monday, September 25, 2006 9:40:36 PM"}, 
-				{"tag":"Macaulay Culkin", "date_time": "Monday, September 25, 2006 9:40:36 PM"}, 
-				{"tag":"sequel", "date_time": "Monday, September 25, 2006 9:40:36 PM"}
-			]
-		}
-	],
-	"size": 1
+    "request_id": "0871f013c7f945essss5775556e559",
+    "data": [
+        {
+            "title": "Home Alone 2",
+            "release_date": 1992,
+            "genres": ["Children", "Comedy"],
+            "tags": [
+                {"tag":"family", "date_time": "Monday, September 25, 2006 9:40:36 PM"}, 
+                {"tag":"funny", "date_time": "Monday, September 25, 2006 9:40:36 PM"}, 
+                {"tag":"Macaulay Culkin", "date_time": "Monday, September 25, 2006 9:40:36 PM"}, 
+                {"tag":"sequel", "date_time": "Monday, September 25, 2006 9:40:36 PM"}
+            ]
+        }
+    ],
+    "size": 1
 }
 ```
-###List all movies with rating of 3.0
+### Feature 6 - List all movies with rating of 3.0
 *Request example*
 ```
 python3 movies_explorer --rating 3.0
@@ -173,33 +174,33 @@ python3 movies_explorer --rating 3.0
 *Response example*
 ```json
 {
-	"request_id": "abcd1f013c7f945e8a9d965775556e123",
-	"data": [
-		{
-			"title": "Dummy title",
-			"release_date": 1971,
-			"genres": ["Documentary"],
-			"ratings": [
-			{
-				"date_time": "Monday, September 25, 2006 9:40:36 PM"
-				"rating": 3.0
-			}]
-		},
+    "request_id": "abcd1f013c7f945e8a9d965775556e123",
+    "data": [
+        {
+            "title": "Dummy title",
+            "release_date": 1971,
+            "genres": ["Documentary"],
+            "ratings": [
+            {
+                "date_time": "Monday, September 25, 2006 9:40:36 PM"
+                "rating": 3.0
+            }]
+        },
                        {
-			"title": "Some title",
-			"release_date": 1971,
-			"genres": ["Documentary"],
-			"ratings": [
-			{
-				"date_time": "Tuesday, September 26, 2006 9:40:36 PM"
-				"rating": 3.0
-			}]
-		}
-	],
-	"size": 2
+            "title": "Some title",
+            "release_date": 1971,
+            "genres": ["Documentary"],
+            "ratings": [
+            {
+                "date_time": "Tuesday, September 26, 2006 9:40:36 PM"
+                "rating": 3.0
+            }]
+        }
+    ],
+    "size": 2
 }
 ```
-###Show all available genres (duplicate values are not allowed)
+### Feature 7 - Show all available genres (duplicate values are not allowed)
 *Request example*
 ```
 python3 movies_explorer –genres
@@ -212,29 +213,46 @@ python3 movies_explorer –genres
 	"size": 5
 }
 ```
-###Movies rated by user
+### Feature 8 - Movies rated by user
 *Request example*
 ```
 python3 movies_explorer --ratings all --user 1 
 ```
 *Response example*
 ```json
-"data": [
-		{
-			"title": "Documentary",
-			"release_date": 1971,
-			"genres": ["Documentary"],
-			"ratings": [
-			{
-				"date_time": "Monday, September 25, 2006 9:40:36 PM"
-				"rating": 4.5
-			}]
-		}
-	],
-	"size": 1
+{
+    "request_id": "0871f013c7f945e8a9d965775556e559",
+    "data": [
+        {
+            "title": "Documentary",
+            "release_date": 1971,
+            "genres": ["Documentary"],
+            "ratings": [
+            {
+                "date_time": "Monday, September 25, 2006 9:40:36 PM"
+                "rating": 4.5
+            }]
+        }
+    ],
+    "size": 1
+}
 ```
-##Development team
-* ###Miguel Gemio Quispe
-* ###Nelson Delgado Colque
-* ###Andre Arroyo Hinojosa
-* ###Alejandra Maldonado
+## Pytest 
+To run pytest, run the following comand:
+
+*Request example*
+```bash
+$ python3 pytest
+```
+## Pep 8 Rules
+To verify that the code complies with pep8 standards, run the following command:
+*Request example*
+```bash
+$ pycodestyle --show-source --show-pep8 --max-line-length=100 ./test/. ./src/. movies_explorer.py
+```
+
+## Development team
+* ### Miguel Gemio Quispe
+* ### Nelson Delgado Colque
+* ### Andre Arroyo Hinojosa
+* ### Alejandra Maldonado

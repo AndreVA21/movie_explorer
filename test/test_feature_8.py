@@ -1,16 +1,17 @@
 from urllib import request
 from src.feature_8 import feature_8
 
+
 def test_list_data_known_user_returns_non_empty_list():
     request = {
-        'title' : None,
-        'order' : None,
-        'order_by' : None,
-        'genre' : None,
-        'release_date' : None,
-        'tag' : None,
-        'rating' : 'all',
-        'user' : 609,
+        'title': None,
+        'order': None,
+        'order_by': None,
+        'genre': None,
+        'release_date': None,
+        'tag': None,
+        'rating': 'all',
+        'user': 609,
     }
 
     data = feature_8(request)
@@ -560,14 +561,14 @@ def test_list_data_known_user_returns_non_empty_list():
 
 def test_list_data_not_exist_user_returns_empty_list():
     request = {
-        'title' : None,
-        'order' : None,
-        'order_by' : None,
-        'genre' : None,
-        'release_date' : None,
-        'tag' : None,
-        'rating' : 'all',
-        'user' : 1000,
+        'title': None,
+        'order': None,
+        'order_by': None,
+        'genre': None,
+        'release_date': None,
+        'tag': None,
+        'rating': 'all',
+        'user': 1000,
     }
     data = feature_8(request)
     assert data is not None, 'expected non null list'

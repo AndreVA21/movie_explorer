@@ -1,27 +1,9 @@
 from src.file_helper import read_data
-from src.components.filters_string import helper_find, delate_string,\
-                                            convert_epoch_to_datetime_string
+from src.components.filters_string import get_output_format
 
 
-
-def get_output_format(output=[]):
-    new_output = []
-    for element in output:
-        data = {}
-        genres = element.get('genres').split('|')
-        str_date = convert_epoch_to_datetime_string(element.get('timestamp'))
-        data['title'] = delate_string(helper_find(element['title']), element['title'])[:-1]
-        data['release_date'] = helper_find(element['title'])[-1]
-        data['genres'] = genres
-        data['ratings'] = [{
-            'date_time': str_date, 
-            'rating': element.get('rating')
-        }]
-        new_output.append(data)
-    return new_output
-
-
-def feature_8(request = {}):
+def feature_8(request=None):
+    request = {} if request is None else request
     output = []
     if request.get('rating') == 'all':
         ratings_data = read_data('ratings', 'csv')
@@ -45,7 +27,7 @@ def feature_8(request = {}):
                     element['genres'] = movie.get('genres')
                     element.pop('userId')
                     element.pop('movieId')
-                    
+
         output = get_output_format(output)
     else:
         print('For feature 8, the "-r|--rating" only could be "all"')

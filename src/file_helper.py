@@ -16,8 +16,3 @@ def read_data(file_name, extension='csv'):
         print(f'File not Found in path: {path}.\n', e)
     finally:
         return data  # Returns a List of Dictionaries
-
-
-# example to use:
-if __name__ == '__main__':
-    print(read_data('movies','csv'))

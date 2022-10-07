@@ -1,6 +1,7 @@
 import argparse
 import sys
 
+
 def create_new_parser():
     parser = argparse.ArgumentParser(description='Movies Explorer App,'
                                      'explore the Movies, Raitings y tags.')
@@ -26,9 +27,10 @@ def create_new_parser():
 
     args = parser.parse_args()
     str_args = ' '.join(sys.argv)
-    
-    if args.title or args.order or args.by or args.genre or args.release_date or args.tag or\
-        args.rating or args.user:
+
+    if (args.title or args.order or args.by or args.genre) or (
+        args.tag or args.rating or args.user or args.release_date
+    ):
         request = {
             'title': args.title,
             'order': args.order,
@@ -45,7 +47,7 @@ def create_new_parser():
 
 
 def get_keys_not_none_arguments(request):
-    return [key for key, value in request.items() if value != None] 
+    return [key for key, value in request.items() if value is not None]
 
 
 def is_feature_2(request={}):
@@ -65,7 +67,7 @@ def is_feature_3(request={}):
             return True
         else:
             print('"--title" should have only one character to run Feature 3')
-    
+
 
 def is_feature_4(request={}):
     # List all release_dates of a movie.
@@ -105,27 +107,3 @@ def is_feature_8(request={}):
     key_arguments = get_keys_not_none_arguments(request)
     if expected_keys == key_arguments:
         return True
-
-
-if __name__ == '__main__':
-    
-    print(is_feature_2({
-        'title' : 'm1' ,
-        'order' : 'sdf',
-        'order_by' : 3,
-        'genre' : None,
-        'release_date' : None,
-        'tag' : None,
-        'rating' : None,
-        'user' : None,
-    }))
-    print(is_feature_3({
-        'title' : 'm' ,
-        'order' : None,
-        'order_by' : None,
-        'genre' : 's',
-        'release_date' : None,
-        'tag' : None,
-        'rating' : None,
-        'user' : None,
-    }))
