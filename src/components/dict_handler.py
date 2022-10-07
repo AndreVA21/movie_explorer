@@ -17,6 +17,11 @@ def set_data_title_release_date_genres(rows) -> dict:
     'genres':genres_handler(rows['genres'])}
 
 
+def result_tag_format(tag):
+    result = {}
+    result['tag'] = tag['tag']
+    result['date_time'] = convert_epoch_to_datetime_string(tag['timestamp'])
+    return result
 ###filters###
     
 if __name__ == '__main__':

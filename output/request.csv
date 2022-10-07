@@ -15,3 +15,25 @@ ddc4044d5576437e9d2f5d2bcf8b4246,movies_explorer.py --title Sabrinaasas --releas
 e8a52876356c4c93a2d3425887de4581,Test request.csv - ok,2022-10-06 15:32:17
 5195a158ab3d4a3eb195fb1e69a3331f,movies_explorer.py --title X --genre Sci-Fi,2022-10-06 16:42:08
 218ee9923b8f40dbb8ce8b88289733df,Test request.csv - ok,2022-10-06 16:44:28
+32bb6b2d79f94fd78afde64c7c28bb2f,Test request.csv - ok,2022-10-06 18:54:08
+b6b2c10e76d9426eb73272319bfd7e1c,movies_explorer.py --title Step Brothers --tag all,2022-10-06 23:36:34
+8f6e006f93d7493fb7ed460fb763d7de,Test request.csv - ok,2022-10-06 23:37:36
+5373d72e77b34af6a6dd71782974c00d,Test request.csv - ok,2022-10-06 23:40:13
+16e879cfafb6438992b7aabf4873e1d3,Test request.csv - ok,2022-10-06 23:40:33
+27e11d59262e4d838f64ac9462c605b7,Test request.csv - ok,2022-10-06 23:42:32
+df4518cf57ee45dea71e3656fc98ab9e,movies_explorer.py --title Step Brothers --tag all,2022-10-06 23:42:57
+68c0151252e44d2588735b524db514db,movies_explorer.py --title Step Brothers --tag all,2022-10-06 23:45:35
+8576e41e9761409b9a48c745cc5c9480,movies_explorer.py --title Step Brothers --tag all,2022-10-06 23:49:05
+5995eee6619d4d4eb92e88c70c8fc425,movies_explorer.py --title Step Brothers --tag all,2022-10-06 23:51:02
+e437020d44bb4577a5d3382520c72411,movies_explorer.py --title Step Brothers --tag all,2022-10-06 23:52:02
+ff92a14dd8f04110b9b8dae95770dfc3,movies_explorer.py --title Sabrina --tag all,2022-10-06 23:52:34
+360ff73b1b534e0f8a91320f87aecfd5,movies_explorer.py --title Sabrina --tag all,2022-10-06 23:53:05
+1ac87fa294a247c195baec3f84d6c814,movies_explorer.py --title Step Brothers --tag all,2022-10-06 23:53:14
+cc3288f9f1d142f693d0d12a0ce17902,Test request.csv - ok,2022-10-06 23:53:34
+ddc849b2abe644c8a8e7524796d1729d,Test request.csv - ok,2022-10-06 23:53:59
+7d0292fc7c154a5ba89b67418bbb1f11,Test request.csv - ok,2022-10-06 23:55:17
+e412d6c095314cf1926e7d0f773b2bdf,Test request.csv - ok,2022-10-06 23:56:17
+5fd5dc71f0714a43b4c37d796768c7d4,Test request.csv - ok,2022-10-06 23:56:52
+dfe6a88e8db94763a4e0034133339435,Test request.csv - ok,2022-10-06 23:57:11
+31f8886f29b94baba1f6eba5e5b32c65,movies_explorer.py --title Step Brothers --tag all,2022-10-07 08:11:16
+9cd2a1a81c9e4e56a3394ae3ea8735c8,movies_explorer.py --title Step Brothers --tag all,2022-10-07 08:28:48
