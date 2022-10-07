@@ -53,3 +53,6 @@ def convert_epoch_to_datetime_string(timestamp):
 
 def get_genre(genre, genres):
     return [g for g in genres if g == genre]
+
+if __name__ == '__main__' :
+    print(filter_handler(['find 120 number']))
