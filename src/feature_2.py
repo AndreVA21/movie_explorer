@@ -1,6 +1,6 @@
 from src.components.dict_handler import *
 
-def filter_by_all_title_decen_acend(order, order_by) -> dict:
+def feacture_2(order, order_by) -> dict:
 
     data_json = get_dictionary()
     reve = False if order=='asc' or order == 'ascendent' else True
@@ -9,4 +9,4 @@ def filter_by_all_title_decen_acend(order, order_by) -> dict:
     return sorted_dict
 
 if __name__ == '__main__':
-    print(filter_by_all_title_decen_acend('asc','release_date'))
+    print(feacture_2('asc','release_date'))

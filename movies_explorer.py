@@ -6,10 +6,10 @@ from src.parser_helper import create_new_parser, is_feature_2, is_feature_3, is_
 from src.output_helper import save_output_in_json_csv_file
 from src.feature_3 import feature_3
 from src.feature_4 import feature_4
-from src.feacture02 import filter_by_all_title_decen_acend
+from src.feature_2 import filter_by_all_title_decen_acend
 from src.feature07 import feature7
 from src.feature_8 import feature_8
-from src.feacture_6 import feacture_6
+from src.feature_6 import feacture_6
 
 # Read the Argument Since the console
 req, str_args = create_new_parser()    # We get the arguments in a dict and str.
