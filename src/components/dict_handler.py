@@ -1,8 +1,6 @@
 from src.components.filters_string import *
 from src.file_helper import read_data
-from datetime import datetime
 
-FORMAT = "%A, %B %d, %Y %H:%M:%S %p"
 
 def get_dictionary() -> dict:
     
@@ -54,7 +52,7 @@ def set_movie_data(rows, rows_rating) -> dict:
                 )[:-1]),
         'release_date':filter_handler(helper_find(rows['title'])),
         'genres':genres_handler(rows['genres']),
-        'timestamp':datetime.fromtimestamp(int(rows_rating['timestamp']), FORMAT),
+        'timestamp':convert_epoch_to_datetime_string(rows_rating['timestamp']),
         'rating':float(rows_rating['rating'])
     }
 ###filters###
