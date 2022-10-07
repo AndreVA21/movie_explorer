@@ -105,27 +105,3 @@ def is_feature_8(request={}):
     key_arguments = get_keys_not_none_arguments(request)
     if expected_keys == key_arguments:
         return True
-
-
-if __name__ == '__main__':
-    
-    print(is_feature_2({
-        'title' : 'm1' ,
-        'order' : 'sdf',
-        'order_by' : 3,
-        'genre' : None,
-        'release_date' : None,
-        'tag' : None,
-        'rating' : None,
-        'user' : None,
-    }))
-    print(is_feature_3({
-        'title' : 'm' ,
-        'order' : None,
-        'order_by' : None,
-        'genre' : 's',
-        'release_date' : None,
-        'tag' : None,
-        'rating' : None,
-        'user' : None,
-    }))

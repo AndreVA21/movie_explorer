@@ -17,7 +17,3 @@ def read_data(file_name, extension='csv'):
     finally:
         return data  # Returns a List of Dictionaries
 
-
-# example to use:
-if __name__ == '__main__':
-    print(read_data('movies','csv'))

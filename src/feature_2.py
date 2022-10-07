@@ -7,6 +7,3 @@ def feature_2(order, order_by) -> dict:
     sorted_dict = sorted(data_json, key=lambda x: x[order_by],reverse=reve)
 
     return sorted_dict
-
-if __name__ == '__main__':
-    print(feature_2('asc','release_date'))

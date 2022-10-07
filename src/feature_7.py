@@ -1,6 +1,6 @@
 from src.file_helper import read_data
 
-def feature7(res):
+def feature_7(res):
     movies = read_data('movies')
     data = []
     

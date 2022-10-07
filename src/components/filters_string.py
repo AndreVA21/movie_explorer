@@ -1,3 +1,4 @@
+from multiprocessing import dummy
 import re
 from datetime import datetime
 
@@ -9,11 +10,11 @@ def filter_handler(sltring_list) -> int:
     return 0 if year==[] else year[0]
 
 
-def helper_find(String) ->list:
+def helper_find(String) -> list:
     return re.findall(r'[(](.*?)[)]', String)
 
 
-def genres_handler(string) ->list:
+def genres_handler(string) -> list:
     return string.split('|')
 
 
@@ -24,8 +25,6 @@ def delate_string(list_remove,string):
         str_list = string.split('('+list_remove[-1]+')')
         return "".join(str_list)
 
-def date_normalize(int_date):
-    f"   , {int_date/365}"
 
 def normalized(string):
     replacements = (
@@ -54,5 +53,20 @@ def convert_epoch_to_datetime_string(timestamp):
 def get_genre(genre, genres):
     return [g for g in genres if g == genre]
 
-if __name__ == '__main__' :
-    print(filter_handler(['find 120 number']))
+
+def get_output_format(output=[]):
+    new_output = []
+    for element in output:
+        data = {}
+        dummy_title = helper_find(element['title'])
+        genres = element.get('genres').split('|')
+        str_date = convert_epoch_to_datetime_string(element.get('timestamp'))
+        data['title'] = delate_string(dummy_title, element['title'])[:-1]
+        data['release_date'] = dummy_title[-1]
+        data['genres'] = genres
+        data['ratings'] = [{
+            'date_time': str_date, 
+            'rating': element.get('rating')
+        }]
+        new_output.append(data)
+    return new_output

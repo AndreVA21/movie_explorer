@@ -3,7 +3,7 @@ from src.components.dict_handler import set_data_title_release_date_genres, resu
 from src.components.filters_string import *
 
 
-def feature5(title,tag):
+def feature_5(title,tag):
 
     data = []
     if tag == "all":
