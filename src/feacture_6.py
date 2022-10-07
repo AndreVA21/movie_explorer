@@ -1,4 +1,4 @@
-from components.dict_handler import get_dictionary_6
+from src.components.dict_handler import get_dictionary_6
 
 def feacture_6(value):
 
