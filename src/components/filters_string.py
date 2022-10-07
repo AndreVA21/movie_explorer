@@ -24,6 +24,8 @@ def delate_string(list_remove,string):
         str_list = string.split('('+list_remove[-1]+')')
         return "".join(str_list)
 
+def date_normalize(int_date):
+    f"   , {int_date/365}"
 
 def normalized(string):
     replacements = (
