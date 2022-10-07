@@ -46,7 +46,6 @@ def result_tag_format(tag):
 def set_movie_data(rows, rows_rating) -> dict:
     dummy_title = helper_find(rows['title'])
     return {
-        'movieId': rows['movieId'],
         'title': normalized(delate_string(dummy_title, rows['title'])[:-1]),
         'release_date': filter_handler(dummy_title),
         'genres': genres_handler(rows['genres']),

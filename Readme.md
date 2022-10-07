@@ -65,20 +65,20 @@ python movies_explorer --title all --order desc --by title
 *Response example*
 ```json
 {
-	"request_id": "0871f013c7f945e8a9d965775556e559",
-	"data": [
-		{
-			"title": "ABCDEFG",
-			"release_date": 1934,
-			"genres": ["acd", "xyz", "fgh"]
-		},
-		{
-			"title": "OPQRST",
-			"release_date": 1950,
-			"genres": ["acd"]
-		}
-	],
-	"size": 2
+    "request_id": "0871f013c7f945e8a9d965775556e559",
+    "data": [
+        {
+            "title": "ABCDEFG",
+            "release_date": 1934,
+            "genres": ["acd", "xyz", "fgh"]
+    },
+    {
+            "title": "OPQRST",
+            "release_date": 1950,
+            "genres": ["acd"]
+    }
+  ],
+    "size": 2
 }
 
 ```
@@ -95,25 +95,25 @@ python3 movies_explorer --title T* --genre Animation
 *Response example*
 ```json
 {
-	"request_id": "1171f013c7f945e8a9d965775556e559",
-	"data": [
-		{
-			"title": "Taaaaaa",
-			"release_date": 1934,
-			"genres": ["Animation"]
-		},
-		{
-			"title": "Tipy",
-			"release_date": 1970,
-			"genres": ["Animation"]
-		},
-		{
-			"title": "Ted",
-			"release_date": 1980,
-			"genres": ["Animation"]
-		}
-	],
-	"size": 3
+    "request_id": "1171f013c7f945e8a9d965775556e559",
+    "data": [
+        {
+            "title": "Taaaaaa",
+            "release_date": 1934,
+            "genres": ["Animation"]
+        },
+        {
+            "title": "Tipy",
+            "release_date": 1970,
+            "genres": ["Animation"]
+        },
+        {
+            "title": "Ted",
+            "release_date": 1980,
+            "genres": ["Animation"]
+        }
+    ],
+    "size": 3
 }
 ```
 ### Feature 4 - List all release dates for movie title  "Sabrina"
@@ -124,20 +124,20 @@ python3 movies_explorer --title Sabrina --release_date all
 *Response example*
 ```json
 {
-	"request_id": "asss1f013c7f945e8a9d965775556e559",
-	"data": [
-		{
-			"title": "Sabrina",
-			"release_date": 1954,
-			"genres": ["Comedy", "Romance"]
-		},
-		{
-			"title": "Sabrina",
-			"release_date": 1995,
-			"genres": ["Comedy", "Romance"]
-		}
-	],
-	"size": 2
+    "request_id": "asss1f013c7f945e8a9d965775556e559",
+    "data": [
+        {
+            "title": "Sabrina",
+            "release_date": 1954,
+            "genres": ["Comedy", "Romance"]
+        },
+        {
+            "title": "Sabrina",
+            "release_date": 1995,
+            "genres": ["Comedy", "Romance"]
+        }
+    ],
+    "size": 2
 }
 ```
 
@@ -149,21 +149,21 @@ python3 movies_explorer --title "Home Alone 2" --tag all
 *Response example*
 ```json
 {
-	"request_id": "0871f013c7f945essss5775556e559",
-	"data": [
-		{
-			"title": "Home Alone 2",
-			"release_date": 1992,
-			"genres": ["Children", "Comedy"],
-			"tags": [
-				{"tag":"family", "date_time": "Monday, September 25, 2006 9:40:36 PM"}, 
-				{"tag":"funny", "date_time": "Monday, September 25, 2006 9:40:36 PM"}, 
-				{"tag":"Macaulay Culkin", "date_time": "Monday, September 25, 2006 9:40:36 PM"}, 
-				{"tag":"sequel", "date_time": "Monday, September 25, 2006 9:40:36 PM"}
-			]
-		}
-	],
-	"size": 1
+    "request_id": "0871f013c7f945essss5775556e559",
+    "data": [
+        {
+            "title": "Home Alone 2",
+            "release_date": 1992,
+            "genres": ["Children", "Comedy"],
+            "tags": [
+                {"tag":"family", "date_time": "Monday, September 25, 2006 9:40:36 PM"}, 
+                {"tag":"funny", "date_time": "Monday, September 25, 2006 9:40:36 PM"}, 
+                {"tag":"Macaulay Culkin", "date_time": "Monday, September 25, 2006 9:40:36 PM"}, 
+                {"tag":"sequel", "date_time": "Monday, September 25, 2006 9:40:36 PM"}
+            ]
+        }
+    ],
+    "size": 1
 }
 ```
 ### Feature 6 - List all movies with rating of 3.0
@@ -174,30 +174,30 @@ python3 movies_explorer --rating 3.0
 *Response example*
 ```json
 {
-	"request_id": "abcd1f013c7f945e8a9d965775556e123",
-	"data": [
-		{
-			"title": "Dummy title",
-			"release_date": 1971,
-			"genres": ["Documentary"],
-			"ratings": [
-			{
-				"date_time": "Monday, September 25, 2006 9:40:36 PM"
-				"rating": 3.0
-			}]
-		},
+    "request_id": "abcd1f013c7f945e8a9d965775556e123",
+    "data": [
+        {
+            "title": "Dummy title",
+            "release_date": 1971,
+            "genres": ["Documentary"],
+            "ratings": [
+            {
+                "date_time": "Monday, September 25, 2006 9:40:36 PM"
+                "rating": 3.0
+            }]
+        },
                        {
-			"title": "Some title",
-			"release_date": 1971,
-			"genres": ["Documentary"],
-			"ratings": [
-			{
-				"date_time": "Tuesday, September 26, 2006 9:40:36 PM"
-				"rating": 3.0
-			}]
-		}
-	],
-	"size": 2
+            "title": "Some title",
+            "release_date": 1971,
+            "genres": ["Documentary"],
+            "ratings": [
+            {
+                "date_time": "Tuesday, September 26, 2006 9:40:36 PM"
+                "rating": 3.0
+            }]
+        }
+    ],
+    "size": 2
 }
 ```
 ### Feature 7 - Show all available genres (duplicate values are not allowed)
@@ -220,20 +220,37 @@ python3 movies_explorer --ratings all --user 1
 ```
 *Response example*
 ```json
-"data": [
-		{
-			"title": "Documentary",
-			"release_date": 1971,
-			"genres": ["Documentary"],
-			"ratings": [
-			{
-				"date_time": "Monday, September 25, 2006 9:40:36 PM"
-				"rating": 4.5
-			}]
-		}
-	],
-	"size": 1
+{
+    "request_id": "0871f013c7f945e8a9d965775556e559",
+    "data": [
+        {
+            "title": "Documentary",
+            "release_date": 1971,
+            "genres": ["Documentary"],
+            "ratings": [
+            {
+                "date_time": "Monday, September 25, 2006 9:40:36 PM"
+                "rating": 4.5
+            }]
+        }
+    ],
+    "size": 1
+}
 ```
+## Pytest 
+To run pytest, run the following comand:
+
+*Request example*
+```bash
+$ python3 pytest
+```
+## Pep 8 Rules
+To verify that the code complies with pep8 standards, run the following command:
+*Request example*
+```bash
+$ pycodestyle --show-source --show-pep8 --max-line-length=100 ./test/. ./src/. movies_explorer.py
+```
+
 ## Development team
 * ### Miguel Gemio Quispe
 * ### Nelson Delgado Colque
